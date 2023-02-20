@@ -1,9 +1,12 @@
-{% extends 'main/layout.html' %}
+{% extends 'main_pages/layout.html' %}
 
-{% block title %}Главная страница{% endblock %}
+{% block title %}{{ title }}{% endblock %}
 
 {% block content %}
-    <p>Главная страница</p>
-
-    {% include 'main/test.html' %}
+    <div class="features">
+        <h1>{{ title }}</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <buttom class="btn btn-warning">На страницу про нас</buttom>
+        {% include 'main_pages/test.html' %}
+    </div>
 {% endblock %}

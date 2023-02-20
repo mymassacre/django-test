@@ -1,0 +1,24 @@
+aside {
+    float: left;
+    width: 20%;
+    padding: 20%;
+    height: 100vh;
+    border-right: 2px solid;
+}
+
+aside h3 {
+    margin-top: 50px;
+    font-size: 28px;
+}
+
+aside ul {list-style: none}
+aside ul li {
+    display: block;
+    margin-top: 20px;
+    transition: all .6s ease;
+}
+
+aside ul li:hover, aside ul a:hover {
+    text-decoration: none;
+    transform: scale(1.05);
+}
